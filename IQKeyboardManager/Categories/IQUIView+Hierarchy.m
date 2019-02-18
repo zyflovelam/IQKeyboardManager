@@ -76,14 +76,14 @@
     
     UIViewController *matchController = [self viewContainingController];
     
-    while (matchController && [controllersHierarchy containsObject:matchController] == NO)
-    {
-        do
-        {
-            matchController = (UIViewController*)[matchController nextResponder];
-            
-        } while (matchController && [matchController isKindOfClass:[UIViewController class]] == NO);
-    }
+//    while (matchController && [controllersHierarchy containsObject:matchController] == NO)
+//    {
+//        do
+//        {
+//            matchController = (UIViewController*)[matchController nextResponder];
+//
+//        } while (matchController && [matchController isKindOfClass:[UIViewController class]] == NO);
+//    }
     
     return matchController;
 }
